@@ -1,4 +1,4 @@
 # 252Lab6
 
 ## Members
-Giorgi Khmaladze _gkhmalad@purdue.edu_
+Giorgi Khmaladze - _gkhmalad@purdue.edu_
