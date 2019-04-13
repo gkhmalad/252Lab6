@@ -1,5 +1,10 @@
 <?php
-  //TODO
+  include 'DatabaseConnection.php';
+  //* $dbConnection = DatabaseConnection::getInstance()->getConnection();
+  session_start();
+  if(!$_SESSION['username'] || !$_SESSION['userid']){
+    header('Location: index.php'); 
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
