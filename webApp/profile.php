@@ -1,3 +1,6 @@
+<?php
+  //TODO
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,7 @@
 
   <div class="nav-bar">
 
-    <a href="new-entry.html">New Entry</a>
+    <a href="new-entry.php">New Entry</a>
     <hr>
   </div>
 

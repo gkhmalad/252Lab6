@@ -1,11 +1,15 @@
 <?php
 
+  include 'DatabaseConnection.php';
+  //* $dbConnection = DatabaseConnection::getInstance()->getConnection();
+
   session_start();
 
   //? Variables
   $error = "";
   $password = "";
   $username = "";
+  $fetchedPassword = "";
 
   //? If form was submitted
   if($_POST){
@@ -37,9 +41,30 @@
     }
     else{
 
-      //TODO implement login check here
-    }
+      //? Connecting to database for credential validation
+      $dbConnection = DatabaseConnection::getInstance()->getConnection();
+
+      //? Querying the database with custom query
+      $query = "SELECT password FROM users WHERE `username` = '".$username."'";
+
+      if($result = mysqli_query($dbConnection, $query)){
+
+        $row = mysqli_fetch_array($result);
+        $fetchedPassword = $row['password'];
+      }
+
+      if($fetchedPassword == $password){
+
+        $_SESSION['username'] = $username;
+        $_SESSION['userid'] = $row['userID'];
+        header("Location: ./profile.php");
+      }
+      else{
+
+        $error = '<div class="signin-error" style="color:red;"><strong>Error:</strong><br>Incorrect Credentials!</div>';
+      }
   }
+}
 
 ?>
 
@@ -75,7 +100,7 @@
   <div class="register">
 
     <p>Don't Have an Account?</p>
-    <a href="register.html">Register</a>
+    <a href="register.php">Register</a>
   </div>
   
   <div class="bottom-bar">

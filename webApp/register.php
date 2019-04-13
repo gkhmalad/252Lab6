@@ -1,3 +1,7 @@
+<?php
+  //TODO
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +34,7 @@
   <div class="register">
 
     <p>Already Have an Account?</p>
-    <a href="index.html">Log In</a>
+    <a href="index.php">Log In</a>
   </div>
 
   <div class="bottom-bar">
