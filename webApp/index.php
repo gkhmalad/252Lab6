@@ -29,7 +29,7 @@
       //? Connecting to database for credential validation
       $dbConnection = DatabaseConnection::getInstance()->getConnection();
       //? Querying the database with custom query
-      $query = "SELECT password FROM users WHERE `username` = '".$username."'";
+      $query = "SELECT * FROM users WHERE `username` = '".$username."'";
       if($result = mysqli_query($dbConnection, $query)){
         $row = mysqli_fetch_array($result);
         $fetchedPassword = $row['password'];
@@ -38,6 +38,8 @@
       if($fetchedPassword == $password){
         $_SESSION['username'] = $username;
         $_SESSION['userid'] = $row['userID'];
+        //? Closing database connection
+        mysqli_close($dbConnection);
         header("Location: ./profile.php");
       }else{
         $error = '<div class="signin-error" style="color:red;"><strong>Error:</strong><br>Incorrect Credentials!</div>';
