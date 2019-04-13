@@ -1,8 +1,8 @@
 # 252Lab6
 
 ## Members
-Giorgi Khmaladze - _gkhmalad@purdue.edu_
-Nick Litman - _nicksemail@purdue.edu_
+Giorgi Khmaladze - _gkhmalad@purdue.edu_  
+Nick Litman - _nicksemail@purdue.edu_  
 Mihir Somani - _mihirsemail@purdue.edu_
 
 ## Project Description
