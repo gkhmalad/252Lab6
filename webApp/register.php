@@ -47,13 +47,13 @@
               <?php echo $error; ?>
             </div>
           <form method="POST">
-              <input type="text" placeholder="Username..." name="username">
+              <input type="text" placeholder="Enter username" name="username">
               <br>
-              <input type="text" placeholder="Email..." name="email">
+              <input type="text" placeholder="Enter email" name="email">
               <br>
-              <input type="password" placeholder="Password..." name="password">
+              <input type="password" placeholder="Enter password" name="password">
               <br>
-              <input type="password" placeholder="Repeat Password..." name="repassword">
+              <input type="password" placeholder="Re-enter password" name="repassword">
               <br>
               <input type="submit" value="Register">
           </form>
