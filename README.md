@@ -11,7 +11,7 @@ This project is called <<NAME HERE>>. <<NAME HERE>> is a simple planning tool fo
 ## Technologies
 * HTML5
 * CSS3
-* JavaScript `Plane`
+* JavaScript
 * PHP
 * MySQL
 
