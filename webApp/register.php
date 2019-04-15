@@ -86,10 +86,10 @@
   </div>
 
   <div class="register-form">
-
     <div class="err">
       <?php echo $error; ?>
     </div>
+    
     <form method="POST">
 
       <input type="text" placeholder="Username..." name="username">

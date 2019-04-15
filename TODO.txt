@@ -1,0 +1,5 @@
+**TODO** [TD] -> TODO  [SG] -> Suggestion
+
+[TD]Figure out how to store time and date in the database
+
+[SG]Hash Passwords
