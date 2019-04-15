@@ -2,7 +2,7 @@
 
 ## Members
 Giorgi Khmaladze - _gkhmalad@purdue.edu_  
-Nick Litman - _nicksemail@purdue.edu_  
+Nick Litman - _nlitman@purdue.edu_  
 Mihir Somani - _somanim@purdue.edu_
 
 ## Project Description
