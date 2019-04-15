@@ -17,17 +17,20 @@
 
   <div class="top-bar">
 
-    <h1 style="color:orange">**USERNAME**</h1>
+    <h1 style="color:orange"><?php echo strtoupper($_SESSION['username'])." PROFILE"?></h1>
     <hr>
   </div>
 
   <div class="nav-bar">
 
     <a href="new-entry.php">New Entry</a>
-    <br>
-    <a href="logout.php" id="logout" title="Log Out">Log Out</a>
-
+    &nbsp
+    <a href="logout.php" id="logout" title="Log Out" >Log Out</a>
     <hr>
+  </div>
+
+  <div class="entries">
+    
   </div>
 
 
