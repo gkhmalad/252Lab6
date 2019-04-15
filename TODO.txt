@@ -2,4 +2,8 @@
 
 [TD]Figure out how to store time and date in the database
 
+[TD]Add delete entry button on listed entries
+
+[SG]Add a check button that displays a strikethrough for completed tasks
+
 [SG]Hash Passwords
