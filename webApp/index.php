@@ -50,43 +50,34 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel='icon' href="favicon.ico" type='image/x-icon'>
-  <title>Log In</title>
-</head>
-<body>
-
-  <div class="top-bar">
-    <h1>Log In</h1>
-    <hr>
-  </div>
-
-  <div class="login-form">
-    <form method="POST">
-
-      <div class="err">
-        <?php echo $error; ?>
-      </div>
-
-      <input type="text" placeholder="Username..." name="username">
-      <br>
-      <input type="password" placeholder="Password..." name="password">
-      <br>
-      <input type="submit" value="Log In">
-    </form>
-  </div>
-
-  <div class="register">
-
-    <p>Don't Have an Account?</p>
-    <a href="register.php">Register</a>
-  </div>
-  
-  <div class="bottom-bar">
-
-    <hr>
-  </div>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='icon' href="favicon.ico" type='image/x-icon'>
+        <title>Log In</title>
+    </head>
+    <body>
+        <div class="top-bar">
+            <h1>Log In</h1>
+            <hr>
+        </div>
+        <div class="login-form">
+            <form method="POST">
+                <div class="err">
+                    <?php echo $error; ?>
+                </div>
+                <input type="text" placeholder="Enter username" name="username">
+                <br>
+                <input type="password" placeholder="Enter password" name="password">
+                <br>
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+        <div class="register">
+            <p>Don't Have an Account?</p>
+            <a href="register.php">Register</a>
+        </div>
+        <div class="bottom-bar">
+            <hr>
+        </div>
+    </body>
 </html>
