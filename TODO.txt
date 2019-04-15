@@ -4,6 +4,8 @@
 
 [TD]Add delete entry button on listed entries
 
+[TD]Use external CSS rather than inline
+
 [SG]Add a check button that displays a strikethrough for completed tasks
 
 [SG]Hash Passwords
