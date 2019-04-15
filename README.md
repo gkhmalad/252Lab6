@@ -16,7 +16,7 @@ This project is called <<NAME HERE>>. <<NAME HERE>> is a simple planning tool fo
 * MySQL
 
 ## Services
-* PHPMailer: `https://github.com/PHPMailer/PHPMailer`
+* PHPMailer: _https://github.com/PHPMailer/PHPMailer_
 * Deployment on `Heroku`
 
 
