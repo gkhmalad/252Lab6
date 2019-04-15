@@ -7,16 +7,8 @@
     $username = "";
     $fetchedPassword = "";
     if($_POST){
-        if(!$_POST['username']){
-            $error .= "A username is required to log in.<br>";
-        }else{
-            $username = $_POST['username'];
-        }
-        if(!$_POST['password']){
-            $error .= "A password is required to log in.<br>";
-        }else{
-            $password = $_POST['password'];
-        }
+        !$_POST['username'] ? $error .= "A username is required to log in.<br>" : $username = $_POST['username'];
+        !$_POST['password'] ? $error .= "A password is required to log in.<br>" : $password = $_POST['password'];
         if($error != ""){
             $error = '<div class="signin-error" style="color:red;"><strong>Error:</strong><br>'.$error.'</div>';
         }else{
