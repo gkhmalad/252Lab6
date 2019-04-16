@@ -32,9 +32,11 @@
     <head>
         <meta charset="UTF-8">
         <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
+        <link rel="stylesheet" type="text/css" href="./css/indexStyle.css" media="all" />
         <title>Log In</title>
     </head>
     <body>
+    <!--
         <div class="top-bar">
             <h1>Log In</h1>
             <hr>
@@ -42,7 +44,7 @@
         <div class="login-form">
             <form method="POST">
                 <div class="err">
-                    <?php echo $error; ?>
+                    <?php //echo $error; ?>
                 </div>
                 <input type="text" placeholder="Enter username" name="username">
                 <br>
@@ -57,6 +59,25 @@
         </div>
         <div class="bottom-bar">
             <hr>
+        </div>
+        -->
+
+        <h1>WELCOME TO 2DAY</h1>
+        <h1><?php echo $error; ?></h1>
+
+        <div class="stand">
+          <div class="outer-screen">
+            <div class="inner-screen">
+              <div class="form">
+                <form method="POST">
+                    <input type="text" class="zocial-dribbble" placeholder="Enter your username" name="username" />
+                    <input type="password" placeholder="Password" name="password"/>
+                    <input type="submit" value="Login"/>
+                 </form>
+                <a href="./register.php">SIGN UP</a>
+              </div> 
+            </div> 
+          </div> 
         </div>
     </body>
 </html>

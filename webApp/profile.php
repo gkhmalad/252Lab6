@@ -21,6 +21,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
         <title>My Profile</title>
         <style>
             table {
