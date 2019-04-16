@@ -42,7 +42,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel='icon' href="favicon.ico" type='image/x-icon'>
+  <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
   <title>New Task</title>
 </head>
 <body>
