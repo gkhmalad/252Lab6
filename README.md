@@ -16,7 +16,6 @@ This project is called 2day. 2day is a simple planning tool for managing ones da
 * MySQL
 
 ## Services
-* PHPMailer: _https://github.com/PHPMailer/PHPMailer_
 * Deployment on `Heroku`
 
 
