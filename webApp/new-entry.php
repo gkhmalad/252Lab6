@@ -25,11 +25,23 @@
     }else{
       $description = $_POST['description'];
     }
+    //? Time field validation server-side
+    if(!$_POST['time']){
+      $error .= "Time is required to create a new task.<br>";
+    }else{
+      $time = $_POST['time'];
+    }
+    //? Date field validation server-side
+    if(!$_POST['date']){
+      $error .= "A date is required to create a new task.<br>";
+    }else{
+      $date = $_POST['date'];
+    }
     //? Database check if validation passed
     if($error != ""){
       $error = '<div class="signin-error" style="color:red;"><strong>Error:</strong><br>'.$error.'</div>';
     }else{
-      $query = "INSERT INTO `items` (`name`, `description`, `userID`) VALUES ('".$taskName."', '".$description."', '".$_SESSION['userid']."')";
+      $query = "INSERT INTO `items` (`name`, `description`, `userID`, `time`, `date`) VALUES ('".$taskName."', '".$description."', '".$_SESSION['userid']."', '".$time."', '".$date."')";
       mysqli_query($dbConnection, $query);
       $error = '<div class="creation-success" style="color:gree"><p>Task Creation Success!</p></div>';
       //? Closing database connection
@@ -43,38 +55,33 @@
 <head>
   <meta charset="UTF-8">
   <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
-  <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="./css/registerStyle.css" media="all" />
   <title>New Task</title>
 </head>
 <body>
 
   <div class="top-bar">
-
-    <h1 style="color:orange">New Entry</h1>
-    <hr>
+    <h1>New Entry</h1>
   </div>
+  <br>
 
-  <div class="register-form">
-
-    <div class="err">
-      <?php echo $error; ?>
-    </div>
+  <div class="form">
     <form method="POST">
-    
       <input type="text" placeholder="Task Name..." name="taskName">
-      <br>
       <input type="time" placeholder="Time..." name="time">
-      <br>
       <input type="date" name="date">
-      <br>
       <input type="text" placeholder="Description..." name="description">
-      <br>
       <input type="submit" value="Add">
     </form>
   </div>
 
+  <div class="err">
+      <h1>
+      <?php echo $error; ?>
+      </h1>
+  </div>
+
   <div class="bottom-bar">
-    <hr>
   </div>
   
 </body>

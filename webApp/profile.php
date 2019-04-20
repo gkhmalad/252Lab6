@@ -11,7 +11,7 @@
         $num = mysqli_num_rows($result);
         if ($num > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                $listings .= '<tr><td>'.$row['itemID'].'</td><td>'.$row['name'].'</td><td>'.$row['description'].'</td></tr>';
+                $listings .= '<tr><td>'.$row['itemID'].'</td><td>'.$row['name'].'</td><td>'.$row['description'].'</td><td>'.$row['time'].'</td><td>'.$row['date'].'</td></tr>';
             }
         }
     }
@@ -49,6 +49,8 @@
                     <th>#</th>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>Time</th>
+                    <th>Date</th>
                 </tr>
                 <div class="entry-single">
                     <?php echo $listings; ?>
