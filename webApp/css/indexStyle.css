@@ -1,7 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
-  background: #F803FC;
+  background: #343d46;
 }
 
 h1{
@@ -82,7 +82,7 @@ h1{
 .inner-screen{
   width: 800px;
   height: 340px;
-  background: #F803FC;
+  background: #BA55D3;
   margin: 0px auto;
   padding-top: 80px;
 }
@@ -115,7 +115,7 @@ input[type="text"]{
 }
 
 input[type="password"]:focus{
-  border: 2px solid #F803FC
+  border: 2px solid #BA55D3
 }
 
 input[type="password"]{
@@ -135,12 +135,12 @@ input[type="password"]{
 }
 
 input[type="text"]:focus{
-  border: 2px solid #F803FC
+  border: 2px solid #BA55D3
 }
 
 input[type="submit"]{
   display: block;
-  background: #F803FC;
+  background: #BA55D3;
   width: 314px;
   padding: 12px;
   cursor: pointer;
@@ -155,7 +155,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-  background: #F803FC
+  background: #BA55D3
 }
 
 a{
@@ -170,7 +170,7 @@ a{
 }
 
 a:hover{
-  color: #F803FC;
+  color: #BA55D3;
 }
 
 

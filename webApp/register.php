@@ -32,39 +32,34 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
-      <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
-      <title>Register</title>
-    </head>
-    <body>
-        <div class="top-bar">
-            <h1>Register</h1>
-            <hr>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
+    <link rel="stylesheet" type="text/css" href="./css/registerStyle.css" media="all" />
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <h1>Register</h1>
+        <br>
+    </div>
+    <div class="form">
+        <div class="err">
+            <?php echo $error; ?>
         </div>
-      <div class="register-form">
-          <div class="err">
-              <?php echo $error; ?>
-            </div>
-          <form method="POST">
-              <input type="text" placeholder="Enter username" name="username">
-              <br>
-              <input type="text" placeholder="Enter email" name="email">
-              <br>
-              <input type="password" placeholder="Enter password" name="password">
-              <br>
-              <input type="password" placeholder="Re-enter password" name="repassword">
-              <br>
-              <input type="submit" value="Register">
-          </form>
-      </div>
-      <div class="register">
-          <p>Already Have an Account?</p>
-          <a href="index.php">Log In</a>
-      </div>
-      <div class="bottom-bar">
-          <hr>
-      </div>
-    </body>
+        <form method="POST">
+            <input type="text" placeholder="Enter username" name="username">
+            <input type="text" placeholder="Enter email" name="email">
+            <input type="password" placeholder="Enter password" name="password">
+            <input type="password" placeholder="Re-enter password" name="repassword">
+            <input type="submit" value="Register">
+            <a href="index.php">Log In</a>
+        </form>
+    </div>
+    <div class="bottom-bar">
+    </div>
+</body>
+
 </html>
