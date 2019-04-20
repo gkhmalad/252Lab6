@@ -6,6 +6,9 @@
     $password = "";
     $username = "";
     $fetchedPassword = "";
+    if(isset($_SESSION['username']) && isset($_SESSION['userid'])){
+        header('Location: ./profile.php');
+    }
     if($_POST){
         !$_POST['username'] ? $error .= "A username is required to log in.<br>" : $username = $_POST['username'];
         !$_POST['password'] ? $error .= "A password is required to log in.<br>" : $password = $_POST['password'];
