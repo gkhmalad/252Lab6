@@ -30,17 +30,28 @@
             table, th, td {
                 border: 1px solid black;
             }
+            tr:hover {background-color:#f5f5f5;}
+
+            a.button{
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                text-decoration: none;
+                color: blue;
+            }
+
         </style>
     </head>
-    <body>
-        <div class="top-bar">
+
+    <body style="background-color:#ede5d3">
+        <div class="top-bar" style="background-color:#bc3118">
             <h1 style="color:orange"><?php echo strtoupper($_SESSION['username'])." PROFILE"?></h1>
             <hr>
         </div>
         <div class="nav-bar">
-            <a href="new-entry.php">New Entry</a>
+            <a href="new-entry.php" class = "button">New Entry</a>
             &nbsp
-            <a href="logout.php" id="logout" title="Log Out" >Log Out</a>
+            <a href="logout.php" id="logout" title="Log Out" class = "button">Log Out</a>
             <hr>
         </div>
         <div class="entries-group">
