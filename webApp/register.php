@@ -22,6 +22,7 @@
                 if(mysqli_num_rows($result)!=0 && $row['email'] = $email){
                     $error = '<div class="signin-error" style="color:red;"><strong>Error:</strong><br>A user with this email already exists.</div>';
                 }else{
+                    $password = password_hash($password, PASSWORD_DEFAULT);
                     $query = "INSERT INTO `users` (`email`, `password`, `username`) VALUES ('".$email."', '".$password."', '".$username."')";
                     mysqli_query($dbConnection, $query);
                     $error = '<div class="signup-success" style="color:green;"><p>Sign Up Success!</p></div>';
