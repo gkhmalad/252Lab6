@@ -1,0 +1,35 @@
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+tr{
+    background: #b7b5b7;
+    padding: 12px 8px 12px 40px;
+}
+
+tr:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+tr:hover {background-color:#8e898e;}
+
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: blue;
+}
+
+div.entry-single{
+    background-color: red;
+    cursor: pointer;
+}
+
+.nav-bar{
+    background-color: #BA55D3;
+}

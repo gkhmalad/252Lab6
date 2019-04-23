@@ -21,30 +21,12 @@
     <head>
         <meta charset="UTF-8">
         <link rel='icon' href="./assets/icons/favicon.ico" type='image/x-icon'>
-        <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="./css/profileStyle.css" media="all" />
         <title>My Profile</title>
-        <style>
-            table {
-                border-collapse: collapse;
-            }
-            table, th, td {
-                border: 1px solid black;
-            }
-            tr:hover {background-color:#f5f5f5;}
-
-            a.button{
-                -webkit-appearance: button;
-                -moz-appearance: button;
-                appearance: button;
-                text-decoration: none;
-                color: blue;
-            }
-
-        </style>
     </head>
 
-    <body style="background-color:#ede5d3">
-        <div class="top-bar" style="background-color:#bc3118">
+    <body style="background-color:#3e4a53">
+        <div class="top-bar" style="background-color:#BA55D3">
             <h1 style="color:orange"><?php echo strtoupper($_SESSION['username'])." PROFILE"?></h1>
             <hr>
         </div>
