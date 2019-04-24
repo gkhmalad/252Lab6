@@ -20,7 +20,7 @@
                 $row = mysqli_fetch_array($result);
                 $fetchedPassword = $row['password'];
             }
-            if($fetchedPassword == $password){
+            if(password_verify($password, $fetchedPassword)){
                 $_SESSION['username'] = $username;
                 $_SESSION['userid'] = $row['userID'];
                 header("Location: ./profile.php");
