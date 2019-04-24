@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2019 at 06:52 AM
+-- Generation Time: Apr 24, 2019 at 06:54 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -32,17 +32,20 @@ CREATE TABLE `items` (
   `itemID` int(11) NOT NULL,
   `name` text NOT NULL,
   `description` text NOT NULL,
-  `userID` int(5) NOT NULL
+  `userID` int(5) NOT NULL,
+  `time` text NOT NULL,
+  `date` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `items`
 --
 
-INSERT INTO `items` (`itemID`, `name`, `description`, `userID`) VALUES
-(1, 'First', 'This is the first thing', 1),
-(2, 'Second', 'This is the second thing', 1),
-(3, 'From user2', 'This is by user2', 2);
+INSERT INTO `items` (`itemID`, `name`, `description`, `userID`, `time`, `date`) VALUES
+(1, 'First', 'This is the first thing', 1, '', ''),
+(2, 'Second', 'This is the second thing', 1, '', ''),
+(3, 'From user2', 'This is by user2', 2, '', ''),
+(4, 'New Item Test', 'This is a test', 1, '12:30', '2019-04-30');
 
 -- --------------------------------------------------------
 
@@ -89,7 +92,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `itemID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `itemID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
