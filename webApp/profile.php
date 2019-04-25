@@ -27,14 +27,12 @@
 
     <body style="background-color:#3e4a53">
         <div class="top-bar" style="background-color:#BA55D3">
-            <h1 style="color:orange"><?php echo strtoupper($_SESSION['username'])." PROFILE"?></h1>
-            <hr>
+            <h1 style="color:white"><?php echo strtoupper($_SESSION['username'])." PROFILE"?></h1>
         </div>
         <div class="nav-bar">
-            <a href="new-entry.php" class = "button">New Entry</a>
+            <a href="new-entry.php" class = "btn-two cyan mini" style="text-decoration: none;">New Entry</a>
             &nbsp
-            <a href="logout.php" id="logout" title="Log Out" class = "button">Log Out</a>
-            <hr>
+            <a href="logout.php" id="logout" title="Log Out" class = "btn-two cyan mini" style="text-decoration: none;">Log Out</a>
         </div>
         <div class="entries-group">
             <table>
@@ -51,7 +49,6 @@
             </table>
         </div>
         <div class="bottom-bar">
-            <hr>
         </div>
     </body>
 </html>

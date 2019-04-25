@@ -1,14 +1,33 @@
+html,body{
+    margin: 0px !important;
+    padding: 0px !important;
+}
 
 table {
     border-collapse: collapse;
 }
 table, th, td {
-    border: 1px solid black;
+    border: 0px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.top-bar{
+    padding: 0px;
+    margin: 0px;
+}
+
+.entries-group{
+    width: 60%;
+    margin-left: 30%;
 }
 
 tr{
     background: #b7b5b7;
-    padding: 12px 8px 12px 40px;
+    border: none;
+    cursor: pointer;
 }
 
 tr:nth-child(odd) {
@@ -23,13 +42,58 @@ a.button{
     appearance: button;
     text-decoration: none;
     color: blue;
-}
-
-div.entry-single{
-    background-color: red;
-    cursor: pointer;
+    margin: auto;
 }
 
 .nav-bar{
-    background-color: #BA55D3;
+    margin: auto;
+    border: none;
+    width: 60%;
+    margin-left: 30%;
+    padding-bottom: 5px;
+    
+}
+
+.color {
+    width: 350px;
+    margin: 0 auto;
+}
+.color li {
+    margin: 0 15px 0 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.color .cyan   {background: #7fccde;}
+.color .purple {background: #cb99c5;}
+
+.btn.mini, 
+.btn-two.mini, 
+.btn-gradient.mini, 
+.btn-effect.mini {
+  padding: 4px 12px;  
+  font-size: 12px;
+}
+
+.btn.cyan, .btn-two.cyan     {background-color: #7fccde;}
+
+.btn-two {
+    color: white;   
+    padding: 15px 25px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.21);
+    border-bottom-color: rgba(0,0,0,0.34);
+    text-shadow:0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+                      0 2px 0 -1px rgba(0,0,0,0.13), 
+                      0 3px 0 -1px rgba(0,0,0,0.08), 
+                      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+.btn-two:active {
+    top: 1px;
+    border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    position: relative;
 }
