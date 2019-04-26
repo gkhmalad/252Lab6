@@ -2,10 +2,10 @@
 class DatabaseConnection{
     private static $instance = null;
     private $connection;
-    private $host = 'localhost';
-    private $username = 'root';
-    private $password = '';
-    private $database = 'lab6_252';
+    private $host = 'us-cdbr-iron-east-02.cleardb.net';
+    private $username = 'b57824e205c97b';
+    private $password = 'fca4188';
+    private $database = 'heroku_50cfedd6d87cf7d';
     private function __construct(){
         $this->connection = mysqli_connect($this->host, $this->username, $this->password, $this->database);
     }
