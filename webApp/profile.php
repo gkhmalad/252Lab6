@@ -11,9 +11,14 @@
         $num = mysqli_num_rows($result);
         if ($num > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                $listings .= '<tr><td>'.$row['itemID'].'</td><td>'.$row['name'].'</td><td>'.$row['description'].'</td><td>'.$row['time'].'</td><td>'.$row['date'].'</td><td><form method="post"><input type="submit" name="deleteEntry" value="Delete"></form></td></tr>';
+                $listings .= '<tr onclick = "strike(this)"><td>'.$row['itemID'].'</td><td>'.$row['name'].'</td><td>'.$row['description'].'</td><td>'.$row['time'].'</td><td>'.$row['date'].'</td><td><form method="post"><input type="text" style="display: none;" name="theID" value="'.$row['itemID'].'"><input type="submit" name="deleteEntry" value="Delete"></form></td></tr>';
             }
         }
+    }
+
+    if(isset($_POST["deleteEntry"])){
+        $query = "DELETE FROM items WHERE `itemID` =".$_POST['theID'];
+        mysqli_query($dbConnection, $query);
     }
 ?>
 <!DOCTYPE html>
@@ -25,7 +30,17 @@
         <title>My Profile</title>
     </head>
 
-    <body style="background-color:#3e4a53">
+    <body>
+        <script type = "text/javascript">
+            function strike(x){
+                if(x.style.textDecoration == "none"){
+                    x.style.textDecoration = "line-through";
+                }
+                else{
+                    x.style.textDecoration = "none";
+                }
+            }
+        </script>
         <div class="top-bar" style="background-color:#BA55D3">
             <h1 style="color:white"><?php echo strtoupper($_SESSION['username'])." PROFILE"?></h1>
         </div>
@@ -42,6 +57,7 @@
                     <th>Description</th>
                     <th>Time</th>
                     <th>Date</th>
+                    <th> </th>
                 </tr>
                 <div class="entry-single">
                     <?php echo $listings; ?>

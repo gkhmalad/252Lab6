@@ -3,8 +3,13 @@ html,body{
     padding: 0px !important;
 }
 
+body{
+    background-color:#3e4a53;
+}
+
 table {
     border-collapse: collapse;
+    min-width: 1000px;
 }
 table, th, td {
     border: 0px solid black;
@@ -20,8 +25,8 @@ table, th, td {
 }
 
 .entries-group{
-    width: 60%;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 20%;
 }
 
 tr{
@@ -48,8 +53,8 @@ a.button{
 .nav-bar{
     margin: auto;
     border: none;
-    width: 60%;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 20%;
     padding-bottom: 5px;
     
 }
