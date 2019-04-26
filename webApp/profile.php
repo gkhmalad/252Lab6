@@ -19,6 +19,7 @@
     if(isset($_POST["deleteEntry"])){
         $query = "DELETE FROM items WHERE `itemID` =".$_POST['theID'];
         mysqli_query($dbConnection, $query);
+        header("Refresh:0");
     }
 ?>
 <!DOCTYPE html>
